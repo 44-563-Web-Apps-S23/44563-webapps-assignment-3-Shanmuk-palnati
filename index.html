@@ -27,5 +27,51 @@
         </ul>
     </br>
     click <a href="/aboutme.html">here</a> to know about me.
+    <hr>
+    <h3>HTML Tables</h3>
+    <p>These are the 4 countries that I would recommend to visit.</p>
+    <table>
+        <tr>
+            <th>Country Name</th>
+            <th>Reason to Visit</th>
+            <th>Number of Days</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>Tropical Climate and Food</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Nepal</td>
+            <td>Explore the majestic Himalayas</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Bhutan</td>
+            <td>Buddhist temples and heritage</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Sri Lanka</td>
+            <td>Pristine beaches and vivid culture	</td>
+            <td>5</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Code Fencing</h3>
+    <blockquote> jQuery Toggle Text? </blockquote>
+    </br>
+    <a href="https://stackoverflow.com/questions/2155453/jquery-toggle-text"> link to stack overflow</a>
+    <pre>
+        $(function() {
+            $("#show-background").click(function () {
+                $("#content-area").animate({opacity: 'toggle'}, 'slow'); 
+            });
+        
+            var text = $('#show-background').text();
+            $('#show-background').text(
+                text == "Show Background" ? "Show Text" : "Show Background");
+        });
+    </pre>
     </body>
 </html>
